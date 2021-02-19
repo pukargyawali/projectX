@@ -1,0 +1,73 @@
+<ion-content [fullscreen]="true">
+  <ion-slides pager="true" loop="true">
+    <ion-slide *ngFor="let media of carouselMedias">
+      <img src={{media.url}} class="new-collection"/> 
+      <div class="myOverlay">
+        <div class="card-title">Welcome to Mount Everest Restaurant</div>
+        <div class="card-subtitle"></div>
+      </div>  
+    </ion-slide>   
+  </ion-slides>
+ <br>
+    <ion-card>
+      <ion-grid>
+          <ion-row>
+              <ion-col size="4" size-sm>        
+                  <ion-card class="ion-card-utilities">
+                    <img src="../assets/img/menu.jpg" />
+                    <ion-item-divider>
+                      <ion-label>Menu</ion-label>
+                    </ion-item-divider> 
+                  </ion-card>       
+              </ion-col>
+
+              <ion-col size="4" size-sm>        
+                <ion-card class="ion-card-utilities">
+                  <img src="../assets/img/order_online.jpg" />         
+                  <ion-item-divider>
+                    <ion-label>Order online</ion-label>
+                  </ion-item-divider> 
+                </ion-card>       
+            </ion-col>
+            
+            <ion-col size="4" size-sm>        
+              <ion-card class="ion-card-utilities">
+                <img src="../assets/img/direction.png" />         
+                <ion-item-divider>
+                  <ion-label>Locations</ion-label>
+                </ion-item-divider> 
+              </ion-card>       
+          </ion-col>           
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4" size-sm>        
+              <ion-card class="ion-card-utilities">
+                <img src="../assets/img/gallery.png" />         
+                <ion-item-divider>
+                  <ion-label>Gallery</ion-label>
+                </ion-item-divider> 
+              </ion-card>       
+          </ion-col>
+
+          <ion-col size="4" size-sm>        
+            <ion-card class="ion-card-utilities">
+              <img src="../assets/img/reservation.jpg" />         
+              <ion-item-divider>
+                <ion-label>Reservation</ion-label>
+              </ion-item-divider> 
+            </ion-card>       
+        </ion-col>
+        
+        <ion-col size="4" size-sm>        
+          <ion-card class="ion-card-utilities">
+            <img src="../assets/img/direction.png" />         
+            <ion-item-divider>
+              <ion-label>Locations</ion-label>
+            </ion-item-divider> 
+          </ion-card>       
+      </ion-col>           
+    </ion-row>
+      </ion-grid>
+    </ion-card> 
+</ion-content>
